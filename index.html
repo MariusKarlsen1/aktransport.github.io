@@ -2,88 +2,439 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <title>AK Transport – Langtransport</title>
+  <title>AK Transport – Stykkgods, lokaldistribusjon og express</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #111827;
-    }
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
-    }
-    h2 {
-      margin-top: 0;
-      color: #0f172a;
-    }
-    ul {
-      line-height: 1.8;
-    }
-    .kontakt {
-      background: #e5e7eb;
-      padding: 20px;
-      border-radius: 6px;
-      margin-top: 30px;
-    }
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-    a {
-      color: #0f172a;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <meta name="description" content="AK Transport kjører stykkgods internasjonalt og lokalt i Stavanger-området, og tar expressoppdrag i hele Norge. Trygt, punktlig og fleksibelt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>AK Transport</h1>
-  <p>Profesjonell langtransport i hele Norge</p>
+<div class="top-bar">
+  <div class="container top-bar-inner">
+    <div class="top-bar-left">
+      <a href="tel:90234393">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" fill="currentColor"/></svg>
+        902 34 393
+      </a>
+      <a href="mailto:ak90234393@gmail.com">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5h18v14H3V5Z" stroke="currentColor" stroke-width="2"/><path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        ak90234393@gmail.com
+      </a>
+    </div>
+    <div class="top-bar-right">Man–Fre 08:00–16:00 · Hele Norge</div>
+  </div>
+</div>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#hjem" class="logo">
+      <img src="logo.jpeg" alt="AK Transport" class="logo-img">
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#hjem">Hjem</a></li>
+        <li><a href="#tjenester">Tjenester</a></li>
+        <li><a href="#slik-fungerer-det">Slik fungerer det</a></li>
+        <li><a href="#om-oss">Om oss</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#ansatte">Ansatte</a></li>
+      </ul>
+      <a class="header-phone" href="tel:90234393">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" fill="currentColor"/></svg>
+        902 34 393
+      </a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Åpne meny">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<section>
-  <h2>Om oss</h2>
-  <p>
-    AK Transport tilbyr trygg, effektiv og pålitelig langtransport for bedrifter
-    og private. Vi leverer gods over hele Norge med fokus på kvalitet og punktlighet.
-  </p>
+<section class="hero" id="hjem">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Stykkgods · Lokalt · Internasjonalt · Express</span>
+      <h1>Stykkgods og transport du kan stole på</h1>
+      <p class="lead">
+        AK Transport kjører stykkgods internasjonalt og lokalt i Stavanger-området,
+        og tar expressoppdrag i hele Norge. Kvalitet, trygghet og god service er
+        det du kan forvente av oss – hver eneste dag.
+      </p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-primary">Kontakt oss</a>
+        <a href="tel:90234393" class="btn btn-outline">Ring 902 34 393</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <strong>100%</strong>
+          <span>Fokus på punktlighet</span>
+        </div>
+        <div>
+          <strong>Hele</strong>
+          <span>Norge dekket</span>
+        </div>
+        <div>
+          <strong>Fast</strong>
+          <span>kontaktperson</span>
+        </div>
+      </div>
+    </div>
 
-  <h2>Tjenester</h2>
-  <ul>
-    <li>Langtransport</li>
-    <li>Godstransport</li>
-    <li>Faste oppdrag</li>
-  </ul>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="cabGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e5372c"/>
+            <stop offset="1" stop-color="#c22a20"/>
+          </linearGradient>
+          <linearGradient id="trailerGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f8fafc"/>
+            <stop offset="1" stop-color="#cbd5e1"/>
+          </linearGradient>
+          <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#e5372c" stop-opacity="0.55"/>
+            <stop offset="1" stop-color="#e5372c" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
 
-  <div class="kontakt">
-    <h2>Kontakt</h2>
-    <p><strong>Firma:</strong> AK Transport</p>
-    <p><strong>Kontaktperson:</strong> Andreas Karlsen</p>
-    <p><strong>Telefon:</strong> <a href="tel:90234393">902 34 393</a></p>
-    <p><strong>E-post:</strong> <a href="mailto:ak90234393@gmail.com">ak90234393@gmail.com</a></p>
+        <circle cx="430" cy="90" r="140" fill="url(#glow)"/>
+
+        <g class="road-lines">
+          <path d="M0 300 H520" stroke="#334155" stroke-width="1" opacity="0.4"/>
+          <path d="M0 300 H520" stroke="#e5372c" stroke-width="3" stroke-dasharray="26 22" opacity="0.55" class="dash-move"/>
+        </g>
+        <ellipse cx="270" cy="322" rx="220" ry="14" fill="rgba(0,0,0,0.3)"/>
+
+        <g transform="translate(30,120)">
+          <rect x="120" y="10" width="230" height="120" rx="8" fill="url(#trailerGrad)"/>
+          <rect x="120" y="10" width="230" height="120" rx="8" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+          <path d="M120 46 H350 M120 82 H350 M120 118 H350" stroke="#94a3b8" stroke-width="1.5" opacity="0.6"/>
+
+          <path d="M0 40 H60 a12 12 0 0 1 12 12 V130 H0 Z" fill="url(#cabGrad)"/>
+          <path d="M14 52 h34 a8 8 0 0 1 8 8 v18 h-42 a4 4 0 0 1 -4 -4 v-18 a4 4 0 0 1 4 -4 Z" fill="#e0f2fe" opacity="0.9"/>
+          <rect x="4" y="96" width="60" height="20" rx="3" fill="#0f172a" opacity="0.25"/>
+          <circle cx="10" cy="64" r="4" fill="#fca5a5"/>
+
+          <circle cx="45" cy="140" r="30" fill="#0b1220"/>
+          <circle cx="45" cy="140" r="12" fill="#94a3b8"/>
+          <circle cx="45" cy="140" r="30" fill="none" stroke="#e5372c" stroke-width="3"/>
+
+          <circle cx="255" cy="140" r="30" fill="#0b1220"/>
+          <circle cx="255" cy="140" r="12" fill="#94a3b8"/>
+          <circle cx="255" cy="140" r="30" fill="none" stroke="#e5372c" stroke-width="3"/>
+
+          <circle cx="315" cy="140" r="30" fill="#0b1220"/>
+          <circle cx="315" cy="140" r="12" fill="#94a3b8"/>
+          <circle cx="315" cy="140" r="30" fill="none" stroke="#e5372c" stroke-width="3"/>
+        </g>
+
+        <g class="motion-lines" opacity="0.5">
+          <path d="M0 170 H70" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+          <path d="M0 190 H45" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+          <path d="M0 210 H60" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="trust-strip">
+    <div class="container trust-strip-inner">
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6l-9-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Fullt forsikret gods
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        Punktlig levering
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-7.4 7-12.6A7 7 0 0 0 5 9.4C5 14.6 12 22 12 22Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+        Leverer i hele Norge
+      </div>
+      <div class="trust-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12a8 8 0 1 1 3 6.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 12v5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Fast kontaktperson
+      </div>
+    </div>
   </div>
 </section>
 
-<footer>
-  © 2025 AK Transport
+<section id="tjenester">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Tjenester</span>
+      <h2>Det vi kan tilby deg</h2>
+      <p>Stykkgods, lokaldistribusjon og expressoppdrag – tilpasset ditt behov.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v10h-1.17a2.5 2.5 0 0 0-4.66 0H6.83a2.5 2.5 0 0 0-4.66 0H1V6Z" fill="currentColor"/><path d="M14 9h4l4 4v3h-1.17a2.5 2.5 0 0 0-4.66 0H14V9Z" fill="currentColor" opacity="0.6"/><circle cx="6.5" cy="18" r="1.8" fill="currentColor"/><circle cx="17.5" cy="18" r="1.8" fill="currentColor"/></svg>
+        </div>
+        <h3>Stykkgods</h3>
+        <p>Vi frakter stykkgods trygt og effektivt, både internasjonalt og innenlands, med fokus på presis håndtering og god kommunikasjon underveis.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-7.4 7-12.6A7 7 0 0 0 5 9.4C5 14.6 12 22 12 22Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Lokaldistribusjon Stavanger</h3>
+        <p>Rask og fleksibel distribusjon i Stavanger-området, tilpasset dine leveringsbehov fra dag til dag.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Expressoppdrag</h3>
+        <p>Haster det? Vi tar expressoppdrag i hele Norge med kort responstid og rask levering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="slik-fungerer-det" class="process">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Slik fungerer det</span>
+      <h2>Enkelt å komme i gang</h2>
+      <p>Tre steg fra første henvendelse til levert gods.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="process-number">01</div>
+        <h3>Ta kontakt</h3>
+        <p>Ring eller send en e-post med informasjon om oppdraget – vi svarer raskt.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-number">02</div>
+        <h3>Få et tilbud</h3>
+        <p>Du får en konkurransedyktig pris og en avtalt hentedato, skreddersydd for deg.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-number">03</div>
+        <h3>Vi leverer</h3>
+        <p>Godset hentes og leveres trygt og punktlig, med god oppfølging underveis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="om-oss">
+  <div class="container about-inner">
+    <div class="about-text reveal">
+      <h2>Hvorfor velge AK Transport?</h2>
+      <p>
+        Vi jobber hver dag for å tilby den beste tjenesten til våre kunder.
+        Som et mindre transportfirma kan vi tilby personlig oppfølging,
+        fleksibilitet og en fast kontaktperson gjennom hele oppdraget.
+      </p>
+      <ul class="check-list">
+        <li>
+          <span class="check-icon">✓</span>
+          <span>
+            <span class="label">Pålitelig og punktlig</span>
+            <span class="desc">Vi leverer til avtalt tid, hver gang.</span>
+          </span>
+        </li>
+        <li>
+          <span class="check-icon">✓</span>
+          <span>
+            <span class="label">Personlig service</span>
+            <span class="desc">Direkte kontakt med oss – ingen callsentre.</span>
+          </span>
+        </li>
+        <li>
+          <span class="check-icon">✓</span>
+          <span>
+            <span class="label">Fleksible løsninger</span>
+            <span class="desc">Enkeltoppdrag eller faste avtaler, tilpasset deg.</span>
+          </span>
+        </li>
+        <li>
+          <span class="check-icon">✓</span>
+          <span>
+            <span class="label">Konkurransedyktige priser</span>
+            <span class="desc">God kvalitet uten unødvendige mellomledd.</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about-panel reveal">
+      <h3>Snakk med oss om ditt neste oppdrag</h3>
+      <p>Enten det er et enkeltstående prosjekt eller et løpende samarbeid – ta kontakt, så finner vi en løsning som passer.</p>
+      <div class="stat-row">
+        <div>
+          <strong>1:1</strong>
+          <span>Fast kontaktperson</span>
+        </div>
+        <div>
+          <strong>Norge</strong>
+          <span>Landsdekkende</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Kontakt</span>
+      <h2>Ta kontakt med oss</h2>
+      <p>Ring eller send en e-post, så svarer vi så raskt vi kan.</p>
+    </div>
+
+    <div class="contact-inner reveal">
+      <div class="contact-info">
+        <h2>AK Transport</h2>
+        <p>Kontaktperson: Andreas Karlsen</p>
+
+        <div class="contact-item">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z" fill="currentColor"/></svg>
+          </span>
+          <div>
+            <span class="label">Telefon</span>
+            <a href="tel:90234393">902 34 393</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5h18v14H3V5Z" stroke="currentColor" stroke-width="2"/><path d="M3 6l9 7 9-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <span class="label">E-post</span>
+            <a href="mailto:ak90234393@gmail.com">ak90234393@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s7-7.4 7-12.6A7 7 0 0 0 5 9.4C5 14.6 12 22 12 22Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <div>
+            <span class="label">Dekningsområde</span>
+            <span class="value">Hele Norge</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <h3>Klar for å bestille transport?</h3>
+        <p>Ta kontakt for et uforpliktende tilbud – vi svarer raskt på telefon og e-post.</p>
+        <a href="tel:90234393" class="btn btn-primary">Ring 902 34 393</a>
+        <a href="mailto:ak90234393@gmail.com" class="btn btn-dark">Send e-post</a>
+
+        <div class="service-list">
+          <h4>Våre tjenester</h4>
+          <ul>
+            <li>Stykkgods (nasjonalt og internasjonalt)</li>
+            <li>Lokaldistribusjon i Stavanger-området</li>
+            <li>Expressoppdrag i hele Norge</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ansatte" class="staff">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Ansatte</span>
+      <h2>Møt teamet vårt</h2>
+      <p>Direkte kontaktinfo til den enkelte ansatte.</p>
+    </div>
+
+    <div class="staff-grid">
+      <div class="staff-card reveal">
+        <div class="staff-avatar">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Andreas Karlsen</h3>
+        <span class="staff-role">Daglig leder</span>
+        <a href="tel:90234393" class="staff-phone">902 34 393</a>
+      </div>
+
+      <div class="staff-card reveal">
+        <div class="staff-avatar">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Test</h3>
+        <span class="staff-role">Sjåfør</span>
+        <span class="staff-phone staff-phone-placeholder">xxxxxxxx</span>
+      </div>
+
+      <div class="staff-card reveal">
+        <div class="staff-avatar">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Test</h3>
+        <span class="staff-role">Sjåfør</span>
+        <span class="staff-phone staff-phone-placeholder">xxxxxxxx</span>
+      </div>
+
+      <div class="staff-card reveal">
+        <div class="staff-avatar">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Test</h3>
+        <span class="staff-role">Sjåfør</span>
+        <span class="staff-phone staff-phone-placeholder">xxxxxxxx</span>
+      </div>
+
+      <div class="staff-card reveal">
+        <div class="staff-avatar">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Test</h3>
+        <span class="staff-role">Sjåfør</span>
+        <span class="staff-phone staff-phone-placeholder">xxxxxxxx</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container cta-banner-inner">
+    <div>
+      <h2>Trenger du transport i dag?</h2>
+      <p>Ta kontakt med oss, så finner vi en løsning som passer ditt behov.</p>
+    </div>
+    <div class="cta-banner-actions">
+      <a href="tel:90234393" class="btn btn-primary">Ring 902 34 393</a>
+      <a href="mailto:ak90234393@gmail.com" class="btn btn-outline-dark">Send e-post</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-logo"><img src="logo.jpeg" alt="AK Transport" class="footer-logo-img"></div>
+    <ul class="footer-nav">
+      <li><a href="#hjem">Hjem</a></li>
+      <li><a href="#tjenester">Tjenester</a></li>
+      <li><a href="#om-oss">Om oss</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="#ansatte">Ansatte</a></li>
+    </ul>
+  </div>
+  <div class="container footer-bottom">
+    <span id="year"></span> AK Transport · Org.nr 990 415 218 · 902 34 393 · ak90234393@gmail.com
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
