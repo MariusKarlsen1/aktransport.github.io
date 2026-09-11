@@ -80,15 +80,7 @@ img {
   color: var(--orange);
 }
 
-.top-bar-right {
-  color: #94a3b8;
-  white-space: nowrap;
-}
-
 @media (max-width: 700px) {
-  .top-bar-right {
-    display: none;
-  }
   .top-bar-left {
     gap: 16px;
   }
@@ -913,25 +905,6 @@ a.staff-phone:hover {
   color: #cbd5e1;
   position: relative;
   margin-bottom: 28px;
-}
-
-.about-panel .stat-row {
-  display: flex;
-  gap: 28px;
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.about-panel .stat-row strong {
-  display: block;
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--orange);
-}
-
-.about-panel .stat-row span {
-  font-size: 0.85rem;
-  color: #94a3b8;
 }
 
 /* ---------- Kontakt ---------- */
