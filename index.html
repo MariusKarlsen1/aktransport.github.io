@@ -5,6 +5,7 @@
   <title>AK Transport – Stykkgods, lokaldistribusjon og express</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="AK Transport kjører stykkgods internasjonalt og lokalt i Stavanger-området, og tar expressoppdrag i hele Norge. Trygt, punktlig og fleksibelt.">
+  <link rel="icon" href="logo.jpeg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
@@ -38,6 +39,7 @@
       <ul>
         <li><a href="#hjem">Hjem</a></li>
         <li><a href="#tjenester">Tjenester</a></li>
+        <li><a href="#galleri">Galleri</a></li>
         <li><a href="#slik-fungerer-det">Slik fungerer det</a></li>
         <li><a href="#om-oss">Om oss</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
@@ -85,62 +87,11 @@
       </div>
     </div>
 
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="cabGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#e5372c"/>
-            <stop offset="1" stop-color="#c22a20"/>
-          </linearGradient>
-          <linearGradient id="trailerGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#f8fafc"/>
-            <stop offset="1" stop-color="#cbd5e1"/>
-          </linearGradient>
-          <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-            <stop offset="0" stop-color="#e5372c" stop-opacity="0.55"/>
-            <stop offset="1" stop-color="#e5372c" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-
-        <circle cx="430" cy="90" r="140" fill="url(#glow)"/>
-
-        <g class="road-lines">
-          <path d="M0 300 H520" stroke="#334155" stroke-width="1" opacity="0.4"/>
-          <path d="M0 300 H520" stroke="#e5372c" stroke-width="3" stroke-dasharray="26 22" opacity="0.55" class="dash-move"/>
-        </g>
-        <ellipse cx="270" cy="322" rx="220" ry="14" fill="rgba(0,0,0,0.3)"/>
-
-        <g transform="translate(30,120)">
-          <rect x="120" y="10" width="230" height="120" rx="8" fill="url(#trailerGrad)"/>
-          <rect x="120" y="10" width="230" height="120" rx="8" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
-          <path d="M120 46 H350 M120 82 H350 M120 118 H350" stroke="#94a3b8" stroke-width="1.5" opacity="0.6"/>
-
-          <path d="M0 40 H60 a12 12 0 0 1 12 12 V130 H0 Z" fill="url(#cabGrad)"/>
-          <path d="M14 52 h34 a8 8 0 0 1 8 8 v18 h-42 a4 4 0 0 1 -4 -4 v-18 a4 4 0 0 1 4 -4 Z" fill="#e0f2fe" opacity="0.9"/>
-          <rect x="4" y="96" width="60" height="20" rx="3" fill="#0f172a" opacity="0.25"/>
-          <circle cx="10" cy="64" r="4" fill="#fca5a5"/>
-
-          <circle cx="45" cy="140" r="30" fill="#0b1220"/>
-          <circle cx="45" cy="140" r="12" fill="#94a3b8"/>
-          <circle cx="45" cy="140" r="30" fill="none" stroke="#e5372c" stroke-width="3"/>
-
-          <circle cx="255" cy="140" r="30" fill="#0b1220"/>
-          <circle cx="255" cy="140" r="12" fill="#94a3b8"/>
-          <circle cx="255" cy="140" r="30" fill="none" stroke="#e5372c" stroke-width="3"/>
-
-          <circle cx="315" cy="140" r="30" fill="#0b1220"/>
-          <circle cx="315" cy="140" r="12" fill="#94a3b8"/>
-          <circle cx="315" cy="140" r="30" fill="none" stroke="#e5372c" stroke-width="3"/>
-        </g>
-
-        <g class="motion-lines" opacity="0.5">
-          <path d="M0 170 H70" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
-          <path d="M0 190 H45" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
-          <path d="M0 210 H60" stroke="#f8fafc" stroke-width="3" stroke-linecap="round"/>
-        </g>
-      </svg>
-    </div>
   </div>
+
+  <img src="images/truck-hero.jpg" alt="AK Transport lastebil" class="hero-photo" fetchpriority="high">
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <span class="hero-photo-credit">I samarbeid med Håkull Transport &amp; Logistics</span>
 
   <div class="trust-strip">
     <div class="container trust-strip-inner">
@@ -197,6 +148,33 @@
         <p>Haster det? Vi tar expressoppdrag i hele Norge med kort responstid og rask levering.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="galleri" class="gallery">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Galleri</span>
+      <h2>Bilene våre i aksjon</h2>
+      <p>Et lite innblikk i hverdagen – på veien, på lasteplassen og på oppdrag.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <a class="gallery-item gallery-item-lg reveal" href="images/truck-driving.jpg" target="_blank" rel="noopener">
+        <img src="images/truck-driving.jpg" alt="AK Transport lastebil på veien" loading="lazy">
+      </a>
+      <a class="gallery-item reveal" href="images/truck-02.jpg" target="_blank" rel="noopener">
+        <img src="images/truck-02.jpg" alt="AK Transport lastebil på oppstillingsplass" loading="lazy">
+      </a>
+      <a class="gallery-item reveal" href="images/truck-03.jpg" target="_blank" rel="noopener">
+        <img src="images/truck-03.jpg" alt="AK Transport lastebil lastet med gods" loading="lazy">
+      </a>
+      <a class="gallery-item reveal" href="images/truck-04.jpg" target="_blank" rel="noopener">
+        <img src="images/truck-04.jpg" alt="AK Transport lastebiler side om side" loading="lazy">
+      </a>
+    </div>
+
+    <p class="gallery-credit">Kjøretøy kjøres i samarbeid med Håkull Transport &amp; Logistics.</p>
   </div>
 </section>
 
@@ -359,8 +337,8 @@
 
     <div class="staff-grid">
       <div class="staff-card reveal">
-        <div class="staff-avatar">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="staff-avatar staff-avatar-photo">
+          <img src="images/andreas-karlsen.jpg" alt="Andreas Karlsen">
         </div>
         <h3>Andreas Karlsen</h3>
         <span class="staff-role">Daglig leder</span>
@@ -368,37 +346,46 @@
       </div>
 
       <div class="staff-card reveal">
-        <div class="staff-avatar">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="staff-avatar staff-avatar-photo staff-avatar-placeholder">
+          <img src="images/ingen-fjes.png" alt="">
         </div>
-        <h3>Test</h3>
+        <h3>Ingve Roald Hegelstad</h3>
         <span class="staff-role">Sjåfør</span>
-        <span class="staff-phone staff-phone-placeholder">xxxxxxxx</span>
+        <a href="tel:97874917" class="staff-phone">978 74 917</a>
       </div>
 
       <div class="staff-card reveal">
-        <div class="staff-avatar">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="staff-avatar staff-avatar-photo staff-avatar-placeholder">
+          <img src="images/ingen-fjes.png" alt="">
         </div>
-        <h3>Test</h3>
+        <h3>Kay Hansen</h3>
         <span class="staff-role">Sjåfør</span>
-        <span class="staff-phone staff-phone-placeholder">xxxxxxxx</span>
+        <a href="tel:94012990" class="staff-phone">940 12 990</a>
       </div>
 
       <div class="staff-card reveal">
-        <div class="staff-avatar">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="staff-avatar staff-avatar-photo staff-avatar-placeholder">
+          <img src="images/ingen-fjes.png" alt="">
         </div>
-        <h3>Test</h3>
+        <h3>Mike Bentz</h3>
         <span class="staff-role">Sjåfør</span>
-        <span class="staff-phone staff-phone-placeholder">xxxxxxxx</span>
+        <a href="tel:99743800" class="staff-phone">997 43 800</a>
       </div>
 
       <div class="staff-card reveal">
-        <div class="staff-avatar">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="staff-avatar staff-avatar-photo staff-avatar-placeholder">
+          <img src="images/ingen-fjes.png" alt="">
         </div>
-        <h3>Test</h3>
+        <h3>Harald Andre Hegelstad</h3>
+        <span class="staff-role">Sjåfør</span>
+        <a href="tel:91008414" class="staff-phone">910 08 414</a>
+      </div>
+
+      <div class="staff-card reveal">
+        <div class="staff-avatar staff-avatar-photo staff-avatar-placeholder">
+          <img src="images/ingen-fjes.png" alt="">
+        </div>
+        <h3>Michael Tyser</h3>
         <span class="staff-role">Sjåfør</span>
         <span class="staff-phone staff-phone-placeholder">xxxxxxxx</span>
       </div>

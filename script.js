@@ -39,6 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
     revealEls.forEach(function (el) {
       observer.observe(el);
     });
+
+    // Safety net: browsers can delay or skip IntersectionObserver callbacks
+    // (e.g. backgrounded/inactive tabs), so force everything visible after
+    // a short delay rather than risk content staying hidden.
+    setTimeout(function () {
+      revealEls.forEach(function (el) {
+        el.classList.add("in-view");
+      });
+      observer.disconnect();
+    }, 2000);
   } else {
     revealEls.forEach(function (el) {
       el.classList.add("in-view");
